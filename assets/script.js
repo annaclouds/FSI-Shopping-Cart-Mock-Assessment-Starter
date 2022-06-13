@@ -3,7 +3,6 @@ let quantityNum = 1;                                                // number of
 
 function increaseProduct() {
     let plusButton = document.querySelector('#quantity-up');            // selecting the upButton.
-    // let quantityNum = 1;                                                // number of quantities starting at 1.
 
     plusButton.addEventListener('click', function() {
         console.log('plus button has been clicked.');                   // logging to ensure plus button works.
