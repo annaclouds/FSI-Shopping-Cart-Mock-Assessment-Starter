@@ -26,8 +26,13 @@ function decreaseProduct() {
         quantityNum -= 1;                                               // decreasing the number of quantities by 1 when clicked.
         console.log(quantityNum);                                       // logging the quantity number. 
 
+        if (quantityNum < 0) {                                          // if quantityNum is less than 0,
+            console.log('reached below zero');
+            quantityNum = 0;                                            // keep quantityNum at 0.
+        };
+
         let quantityUpdate = document.querySelector('.total-quantity'); // selecting the quantity content.
-        quantityUpdate.textContent = 'Quantity: ' + quantityNum;        // updating the content with the number of quantityNum clicks.
+        quantityUpdate.textContent = 'Quantity: ' + quantityNum;        // updating the content with the number of quantityNum clicks.        
     });
 };
 
