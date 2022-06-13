@@ -37,6 +37,6 @@ function decreaseProduct() {
     });
 };
 
-
+// calling the functions to use them.
 increaseProduct();
 decreaseProduct();
